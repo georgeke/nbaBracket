@@ -29,6 +29,7 @@ img {
     width: 55px;
     height: 55px;
     cursor: pointer;
+    background-color: white;
 }
 
 img:hover {
@@ -37,10 +38,8 @@ img:hover {
 
 .champion {
     position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
+    left:50%;
+    margin-left:-106px;
 }
 
 .champion img {
@@ -171,4 +170,20 @@ input.left {
 
 input.right {
     right: 0;
+}
+
+.champion form {
+    width: 80px;
+    transform: translate(70px, 0px);
+}
+
+.champion input {
+    font-size: 35px;
+    height: 35px;
+    width: 22px;
+}
+
+.champion form span {
+    font-size: 30px;
+    left: 27px
 }
