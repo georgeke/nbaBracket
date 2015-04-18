@@ -1,0 +1,174 @@
+* {
+    font-family: Helvetica, Arial, Courier;
+}
+
+h1 {
+    font-size: 40px;
+    color: crimson;
+    text-align: center;
+}
+
+ol {
+}
+
+ol, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+article {
+    height: 600px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+img {
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+img:hover {
+    border: 1px solid dodgerblue;
+}
+
+.champion {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.champion img {
+    width: 212px;
+    height: 212px;
+}
+
+.west {
+    float: left;
+    margin-right: 60px;
+}
+
+.east {
+    float: right;
+    margin-left: 60px;
+}
+
+.west div, .east div {
+    display: table-cell;
+    vertical-align: middle;
+    positon: absolute;
+}
+
+.west div:after, .east div:after {
+    opacity: 0.9;
+    content: "";
+    width: 115px;
+    height: 4px;
+    background-color: crimson;
+    position: absolute;
+    z-index: -1;
+}
+
+.west div:before, .east div:before {
+    opacity: 0.9;
+    content: "";
+    width: 4px;
+    background-color: crimson;
+    position: absolute;
+    z-index: -1;
+}
+
+.west div:after {
+    transform: translate(25px, -35px);
+}
+
+.east div:after {
+    width: 115px;
+    transform: translate(-90px, -35px);
+}
+
+/* Round 1 */
+.round1 div {
+    height: 75px;
+}
+
+.round1 div:before {
+    display: none;
+}
+
+/* Round 2 */
+.round2 div {
+    height: 150px;
+}
+
+.round2 div:before {
+    height: 79px;
+    transform: translate(23px, -13px);
+}
+
+/* Round 3 */
+.round3 div {
+    height: 300px;
+}
+
+.round3 div:before {
+    height: 154px;
+    transform: translate(23px, -51px);
+}
+
+/* Round 4 */
+.round4 div {
+    height: 600px;
+}
+
+.round4 div:before {
+    height: 304px;
+    transform: translate(23px, -126px);
+}
+
+.west.round4 div:after {
+    width: 150px;
+}
+
+form {
+    transform: translate(2px, 0px);
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    z-index: 5;
+}
+
+input {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    resize: none;
+    overflow: none;
+    height: 22px;
+    width: 13px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+form span {
+    text-align: center;
+    font-family: Courier;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    width: 25px;
+    left: 10px;
+}
+
+input.left {
+    left: 0;
+}
+
+input.right {
+    right: 0;
+}
